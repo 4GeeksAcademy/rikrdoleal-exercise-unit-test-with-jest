@@ -1,3 +1,7 @@
+// Exporta la función para usarla en otros archivos 
+// (similar a la palabra clave "export" cuando se usa webpack)
+module.exports = { sum, fromEuroToDollar, fromDollarToYen, fromYenToPound};
+
 // Declaramos una función con el nombre exacto "formEuroToDollar"
 const fromEuroToDollar = function(valueInEuro) {
     // Convertimos el valor a dólares
@@ -24,7 +28,3 @@ const sum = (a,b) => {
 
 // Solo un registro en consola para nosotros
 console.log(sum(7,3))
-
-// Exporta la función para usarla en otros archivos 
-// (similar a la palabra clave "export" cuando se usa webpack)
-module.exports = { sum, fromEuroToDollar, fromDollarToYen, fromYenToPound};

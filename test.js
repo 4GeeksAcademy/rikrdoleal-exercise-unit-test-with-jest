@@ -28,12 +28,12 @@ test("One dollar shloud be 156.5 yens", function(){
     const { fromDollarToYen } = require('./app.js');
     const yen = fromDollarToYen(3.5);
     const expected = 3.5 * 156.5;
-    expect(fromDollarToYen(3.5)).toBe(547.75);
+    expect(yen).toBe(expected);
 })
 
 test("One yen shloud be 0.87 pounds", function(){
     const { fromYenToPound } = require('./app.js');
     const pound = fromYenToPound(3.5);
     const expected = 3.5 * 0.87;
-    expect(fromYenToPound(3.5)).toBe(3.045);
+    expect(pound).toBe(expected);
 })
